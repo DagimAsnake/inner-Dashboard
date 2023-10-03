@@ -26,31 +26,31 @@ export const DashboardTop = [
     {
         key: 'Service',
         label: 'Service',
-        path: '/Service',
+        path: '/service',
         icon: <MdOutlineHomeRepairService />
     },
     {
         key: 'Team',
         label: 'Team',
-        path: '/Team',
+        path: '/team',
         icon: <HiOutlineUsers />
     },
     {
         key: 'Partner',
         label: 'Partner',
-        path: '/Partner',
+        path: '/partner',
         icon: <AiOutlineApartment />
     },
     {
         key: 'HappyClients',
         label: 'Happy Clients',
-        path: '/HappyClients',
+        path: '/happyClients',
         icon: <RiEmotionHappyLine />
     },
     {
         key: 'Contact',
         label: 'Contact',
-        path: '/Contact',
+        path: '/contact',
         icon: <BiSolidContact />
     }
 ]

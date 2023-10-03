@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import classNames from 'classnames'
 import { FaPeace } from 'react-icons/fa'
 import { HiOutlineLogout } from 'react-icons/hi'
@@ -39,11 +40,13 @@ function Sidebar() {
 }
 
 function SidebarLink({ item }) {
+  const { pathname } = useLocation()
+
   return (
-    <a href={item.path} className={classNames(linkClasses)}>
+    <Link to={item.path} className={classNames(pathname === item.path ? "bg-neutral-700" : "", linkClasses)}>
       <span className='text-3xl text-blue-500'>{item.icon}</span>
       <span className='hidden md:inline text-orange-500 text-2xl font-bold'>{item.label}</span>
-    </a>
+    </Link>
   )
 }
 
