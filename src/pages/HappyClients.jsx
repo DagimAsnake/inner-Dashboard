@@ -159,7 +159,7 @@ const HappyClients = () => {
         </button>
         <Link
           className="bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold py-1 px-2 rounded-md"
-          to={`/${client._id}`}
+          to={`/client/${client._id}`}
         >
           Edit
         </Link>

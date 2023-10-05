@@ -9,6 +9,7 @@ import HappyClients from './pages/HappyClients'
 import Contact from './pages/Contact'
 import Setting from './pages/Setting'
 import EditClient from './pages/EditClient'
+import EditService from './pages/EditService'
 
 export default function App() {
   return (
@@ -23,7 +24,8 @@ export default function App() {
           <Route path="happyClients" element={<HappyClients />} />
           <Route path='contact' element={<Contact />} />
           <Route path='settings' element={<Setting />} />
-          <Route path='/:clientId' element={<EditClient />} />
+          <Route path='client/:clientId' element={<EditClient />} />
+          <Route path='service/:serviceId' element={<EditService />} />
         </Route>
       </Routes>
     </Router>
