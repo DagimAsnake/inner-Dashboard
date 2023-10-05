@@ -11,6 +11,8 @@ import Setting from './pages/Setting'
 import EditClient from './pages/EditClient'
 import EditService from './pages/EditService'
 import MeetTeam from './pages/MeetTeam'
+import AddTeam from './pages/AddTeam'
+import EditTeam from './pages/EditTeam'
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
           <Route path='client/:clientId' element={<EditClient />} />
           <Route path='service/:serviceId' element={<EditService />} />
           <Route path='meatTeam' element={<MeetTeam />} />
+          <Route path='addTeam' element={<AddTeam />} />
+          <Route path='team/:teamId' element={<EditTeam />} />
         </Route>
       </Routes>
     </Router>
