@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import Setting from './pages/Setting'
 import EditClient from './pages/EditClient'
 import EditService from './pages/EditService'
+import MeetTeam from './pages/MeetTeam'
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
           <Route path='settings' element={<Setting />} />
           <Route path='client/:clientId' element={<EditClient />} />
           <Route path='service/:serviceId' element={<EditService />} />
+          <Route path='meatTeam' element={<MeetTeam />} />
         </Route>
       </Routes>
     </Router>
