@@ -86,7 +86,7 @@ const Service = () => {
               <label htmlFor="message" className="block mb-2 font-bold text-lg">
                 Message
               </label>
-              <input
+              <textarea
                 type="text"
                 name="message"
                 id="message"
@@ -94,6 +94,7 @@ const Service = () => {
                 value={message}
                 onChange={handleMessageChange}
                 className="w-full p-2 rounded-md"
+                rows={4}
               />
             </div>
             <div className="mb-4">
