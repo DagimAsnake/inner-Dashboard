@@ -54,14 +54,14 @@ const About = () => {
             <label htmlFor="about" className="block mb-2 font-bold text-lg">
               About
             </label>
-            <input
-              type="text"
+            <textarea
               name="about"
               id="about"
               placeholder="About"
               value={about}
               onChange={handleAboutChange}
               className="w-full p-2 rounded-md"
+              rows={4} 
             />
           </div>
           <div className="mb-4">

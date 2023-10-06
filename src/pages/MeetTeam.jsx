@@ -50,7 +50,7 @@ const MeetTeam = () => {
             <label htmlFor="about" className="block mb-2 font-bold text-lg">
               About the Team
             </label>
-            <input
+            <textarea
               type="text"
               name="about"
               id="about"
@@ -58,6 +58,7 @@ const MeetTeam = () => {
               value={meet}
               onChange={handleMeetChange}
               className="w-full p-2 rounded-md"
+              rows={10} 
             />
           </div>
           <button
